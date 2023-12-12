@@ -27,6 +27,7 @@ box-sizing: border-box;
 
 body {
 background: var(--bg-url) no-repeat top center/cover;
+height: 100vh;
 
  }
 
@@ -167,4 +168,15 @@ border-radius: 50%;
     padding: 24px 0;
     text-align: center;
     font-size: 14px;
+ }
+ /* Midia queries */
+
+ @media (min-width: 700px) {
+:root {
+    --bg-url: url(./Assets/bg-desktop.jpg);
+}
+
+.light {
+    --bg-url: url(./Assets/bg-desktop-light.jpg);
+}
  }
